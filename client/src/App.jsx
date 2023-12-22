@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Home, About, Profile, SignIn, SignOut} from "./Pages";
+import {Home, About, Profile, SignIn, SignUp} from "./Pages";
 import Header from "./Components/Header";
 
 const App = () => {
@@ -11,7 +11,8 @@ const App = () => {
         <Route exact path="/about" element={<About />}/>
         <Route exact path="/profile" element={<Profile />}/>
         <Route exact path="/sign-in" element={<SignIn />}/>
-        <Route exact path="/sign-out" element={<SignOut />}/>
+        <Route exact path="/sign-up" element={<SignUp />}/>
+
       </Routes>
     </BrowserRouter>
     
