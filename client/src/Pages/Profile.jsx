@@ -36,11 +36,13 @@ const Profile = () => {
         snapshot.totalBytes) * 100;
         setFilePerc(Math.round(progress));
       },
+      // eslint-disable-next-line no-unused-vars
       (error) =>{
         setFileError(true);
       },
       ()=>{
         getDownloadURL(uploadTask.snapshot.ref).then
+        // eslint-disable-next-line no-unexpected-multiline
         ((downloadURL) => 
           setFormData({...formData, avatar: downloadURL})
         );
