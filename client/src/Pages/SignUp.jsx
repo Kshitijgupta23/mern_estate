@@ -1,13 +1,12 @@
 import {Link, useNavigate} from 'react-router-dom';
 import {useState,} from 'react';
 import './SignUp.css';
+import OAuth from '../Components/OAuth.jsx';
 
 const SignUp = () => {
 
   const navigate = useNavigate();
-  const [user,setUser] = useState({
-    username: "", email: "", password: "",
-  });
+  const [user,setUser] = useState({});
 
   const [error,setError] = useState(null);
   const [loading,setLoading] = useState(false);
@@ -64,6 +63,7 @@ const SignUp = () => {
           uppercase hover:opacity-95 disabled:opacity-80' onClick={handleSubmit}>
           {loading ? 'Loading...' : 'Sign Up'}
           </button>
+          <OAuth />
         </form>
         <div className='flex gap-2 mt-5'>
           <p>Have an account?</p>
