@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Home, About, Profile, SignIn, SignUp} from "./Pages";
+import {Home, About, Profile, SignIn, SignUp, CreateListing} from "./Pages";
 import Header from "./Components/Header";
 import PrivateRoute from './Components/PrivateRoute';
 
@@ -14,6 +14,7 @@ const App = () => {
         <Route exact path="/about" element={<About />}/>
         <Route element={<PrivateRoute />}>
         <Route exact path="/profile" element={<Profile />}/>
+        <Route exact path="/create-listing" element={<CreateListing />}/>
         </Route>
       </Routes>
     </BrowserRouter>
