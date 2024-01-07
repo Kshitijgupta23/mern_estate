@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Home, About, Profile, SignIn, SignUp, CreateListing} from "./Pages";
+import {Home, About, Profile, SignIn, SignUp, CreateListing, UpdateListing} from "./Pages";
 import Header from "./Components/Header";
 import PrivateRoute from './Components/PrivateRoute';
 
@@ -9,12 +9,13 @@ const App = () => {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />}/>
-        <Route exact path="/sign-in" element={<SignIn />}/>
-        <Route exact path="/sign-up" element={<SignUp />}/>
-        <Route exact path="/about" element={<About />}/>
+        <Route  path="/sign-in" element={<SignIn />}/>
+        <Route  path="/sign-up" element={<SignUp />}/>
+        <Route  path="/about" element={<About />}/>
         <Route element={<PrivateRoute />}>
-        <Route exact path="/profile" element={<Profile />}/>
-        <Route exact path="/create-listing" element={<CreateListing />}/>
+        <Route  path="/profile" element={<Profile />}/>
+        <Route  path="/create-listing" element={<CreateListing />}/>
+        <Route  path="/update-listing/:listingId" element={<UpdateListing />}/>
         </Route>
       </Routes>
     </BrowserRouter>
