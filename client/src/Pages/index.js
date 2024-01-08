@@ -5,3 +5,4 @@ export { default as SignIn } from "./SignIn";
 export { default as SignUp } from "./SignUp.jsx";
 export { default as CreateListing} from "./CreateListing.jsx";
 export { default as UpdateListing} from "./UpdateListing.jsx";
+export { default as Listing} from "./Listing.jsx";
