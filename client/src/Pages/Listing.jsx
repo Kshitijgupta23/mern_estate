@@ -9,12 +9,11 @@ import {
   FaBath,
   FaBed,
   FaChair,
-  FaMapMarkedAlt,
   FaMapMarkerAlt,
   FaParking,
   FaShare,
 } from 'react-icons/fa';
-// import Contact from '../components/Contact';
+import Contact from '../Components/Contact.jsx';
 
 // https://sabe.io/blog/javascript-format-numbers-commas#:~:text=The%20best%20way%20to%20format,format%20the%20number%20with%20commas.
 
@@ -65,7 +64,7 @@ export default function Listing() {
                   className='h-[550px]'
                   style={{
                     background: `url(${url}) center no-repeat`,
-                    backgroundSize: 'cover',
+                    backgroundSize: 'contain', backgroundRepeat: 'no-repeat'
                   }}
                 ></div>
               </SwiperSlide>
@@ -144,7 +143,7 @@ export default function Listing() {
                 Contact landlord
               </button>
             )}
-            {/* {contact && <Contact listing={listing} />} */}
+            {contact && <Contact listing={listing} />}
           </div>
         </div>
       )}
