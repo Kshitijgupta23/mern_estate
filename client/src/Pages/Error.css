@@ -1,0 +1,47 @@
+.error_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound{
+    position: relative;
+    height: 50vh;
+    width: 100w;
+}
+
+.notfound h1{
+    color: lightgray;
+    font-size: 250px;
+}
+
+.notfound-404{
+    text-align: center;
+    z-index: -1;
+    position: relative;
+}
+
+.content{
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    top: -200px;
+}
+
+.content h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.content p{
+    margin-bottom: 20px;
+}
+
+.notfound button{
+    color: white;
+    background-color: blue;
+    border-radius: 50px;
+    padding: 10px;
+}
