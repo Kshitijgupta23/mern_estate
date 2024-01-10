@@ -262,7 +262,7 @@ const CreateListing = () => {
                     <div className='flex items-center gap-2'>
                         <input type='number' 
                         id='regularPrice' 
-                        min='50' max='1000000' 
+                        min='50' max='1000000000' 
                         className='p-3 border border-gray-300 rounded-lg' 
                         required onChange={handleChange} 
                         value={formData.regularPrice} 
@@ -275,7 +275,7 @@ const CreateListing = () => {
                     {formData.offer && (
                         <div className='flex items-center gap-2'>
                         <input type='number' id='discountPrice' 
-                            min='0' max='1000000' 
+                            min='0' max='1000000000' 
                             className='p-3 border border-gray-300 rounded-lg' 
                             required onChange={handleChange} 
                             value={formData.discountPrice} 

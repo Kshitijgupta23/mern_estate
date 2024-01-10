@@ -2,17 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --primary: 	hsla(70, 58%, 14%,0.65);
-    --secondary: hsla(60, 19%, 91%,0.65);
-}
-
-body {
-    /* padding: 0px;
-    margin: 0px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    background: linear-gradient(135deg, rgba(236, 236, 228, 0.65), rgba(86, 100, 137, 0.65))
-    , url('./photo_real.jpg') no-repeat;
-    background-size: contain; */
 }
