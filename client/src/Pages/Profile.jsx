@@ -202,7 +202,8 @@ const Profile = () => {
       <p className='text-green-700 mt-5'>{updateSuccess ? 'User updated successfully!' : '' }</p>
       <button 
         onClick={showListings} 
-        className='text-green-700 w-full'>
+        className=' bg-green-700 text-white w-full p-3 uppercase
+          rounded-lg text-center hover:opacity-90'>
         Show Listings
       </button>
       <p className='text-red-700 mt-5'>{showListingsError ?
